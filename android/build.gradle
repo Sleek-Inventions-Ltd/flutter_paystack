@@ -2,7 +2,6 @@ group 'co.paystack.flutterpaystack'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    namespace = "co.paystack.flutterpaystack"
     ext.kotlin_version = '1.7.20'
     repositories {
         mavenCentral()
@@ -26,6 +25,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace = "co.paystack.flutterpaystack"
     compileSdkVersion 32
 
     sourceSets {
